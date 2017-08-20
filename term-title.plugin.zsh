@@ -28,6 +28,7 @@ function term_set_title() {
 function term_title_get_command() {
 	emulate -L zsh
 	local job_text job_key
+	typeset -g RETURN_COMMAND
 	RETURN_COMMAND=$1
 	# Since ~4.3.5, patch:
 	# "users/11818: allow non-numeric keys for job status parameters"
