@@ -16,7 +16,7 @@ function term_set_title() {
 	if [[ $term_is_known -ne 1 ]] then
 		return
 	fi
-	printf '\033]2;%s\007' ${1//[^[:print:]]/}
+	printf '\033]0;%s\007' ${1//[^[:print:]]/}
 	if [[ \
 		$TERM_TITLE_SET_MULTIPLEXER -eq 1
 		&& $term_is_multi -eq 1
