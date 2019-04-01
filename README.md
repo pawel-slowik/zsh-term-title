@@ -39,7 +39,7 @@ Here's a configuration that works for me:
 	update it when switching panes (even if you have enabled automatic
 	window renaming). This is confusing, so - don't do it.
 
-0.	Enable tmux automatic window renaming:
+0.	Optionally enable tmux automatic window renaming:
 
 		set -g automatic-rename 1
 
@@ -47,6 +47,11 @@ Here's a configuration that works for me:
 	title (or it's part):
 
 		set -g automatic-rename-format " #I:#{=30:pane_title}#F "
+
+	Note: the above is basically a workaround to make the `choose-window`
+	command easier to use in older tmux versions. Since tmux version 2.6
+	`choose-window` is an alias for `choose-tree -w`; this makes the
+	workaround redundant.
 
 0.	Remove the pane title from other formats used in the status line - it
 	is superfluous there when it is also visible in window names. By
