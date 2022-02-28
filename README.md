@@ -107,5 +107,5 @@ _XTerm Operating System Commands_ section,
 
 ## Acknowledgments
 
-- [Title and Hardstatus](http://zshwiki.org/home/examples/hardstatus)
+- [Title and Hardstatus](https://web.archive.org/web/20180621042045/http://zshwiki.org/home/examples/hardstatus)
 - [xterm title/screen title+hardstatus](http://www.zsh.org/mla/workers/2000/msg03988.html)
